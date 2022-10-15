@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#262525;
+    height: 10vh;
+    color: white;
+}
+.navbar .logo{
+    font-size:32px;
+    margin-left: 50px;
+}
+.navbar .logo img{
+    border-radius: 50%;
+}
+.navbar li{
+    display: inline-block;
+    margin: 30px 50px;
+    font-size: 24px;
+    border-bottom: 3px solid rgb(114, 137, 218);
+}
+.navbar li:hover{
+    border-bottom: 3px solid white;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+
+}
+.main .info{
+    margin: 50px;
+}
+.main .info  .title{
+      font-weight:600;
+      font-size: 32px;
+}
+.main .info p{
+    font-size: 20px;
+    margin: 5px;
+}
+.main span{
+    background-color:rgb(114, 137, 218) ;
+    border-radius: 12px;
+    padding: 5px;
+}
+@keyframes fade{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.main .images img{
+    width: 600px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 16px;
+    
+}
+.btn{
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        background-color: #262525;
+        border: none;
+        padding: 20px;
+        margin-top: 32px;
+        width: 200px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+    }
+.btn:hover{
+        background:#fff;
+        box-shadow:0px 2px 10px 5px rgb(114, 137, 218);
+        color:#000;
+     }
+.footer{
+    
+    text-align: center;
+    background-color:#262525 ;
+}
+.footer img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 30px;
+    }
+.footer img:hover {
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 1);
+    }
