@@ -9,6 +9,11 @@ const server = http.createServer((req, res)=>{
         
        })
     }
+    else if(req.url.match("\.html$")){
+        var htmlpath = path.join(__dirname,'public',req.url);
+        var filestream = fs.createReadStream(htmlpath,"utf-8");
+        filestream.pipe(res);
+    }
     else if(req.url.match("\.css$")){
         var cssPath = path.join(__dirname,'public',req.url);
         console.log(cssPath);
@@ -26,7 +31,7 @@ const server = http.createServer((req, res)=>{
         imgFile.pipe(res);
     }
     else if(req.url.match("\.js$")){
-        var imgPath = path.join(__dirname,'public',req.url);o  
+        var imgPath = path.join(__dirname,'public',req.url); 
         var imgFile = fs.createReadStream(imgPath,"utf-8");
         imgFile.pipe(res);
     }

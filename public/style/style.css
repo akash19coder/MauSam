@@ -57,9 +57,23 @@
     margin: 50px;
     max-width: 500px;
 }
-.main .info  .title{
-      font-weight:600;
-      font-size: 32px;
+.main .info  .title{ 
+        border-right: 2px solid black;
+        font-size: 180%;
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;    
+        animation: typewriter 3s steps(44)  1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+ @keyframes typewriter{
+      from{width: 0;}
+      to{width: 9em;}
+}
+ @keyframes blinkTextCursor{
+      from{border-right-color: rgba(255,255,255,.75);}
+      to{border-right-color: transparent;}
 }
 .main .info p{
     font-size: 20px;
@@ -70,14 +84,7 @@
     border-radius: 12px;
     padding: 5px;
 }
-@keyframes fade{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
+
 .main .images img{
     width: 600px;
     height: 400px;
@@ -101,11 +108,11 @@
         text-decoration: none;
         overflow: hidden;
     }
-.btn:hover{
-        background:#fff;
-        box-shadow:0px 2px 10px 5px rgb(114, 137, 218);
-        color:#000;
-     }
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
 .footer{
     position: relative;
     text-align: center;
