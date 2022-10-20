@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Tiro+Telugu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(../media/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-right: 0;
+
+}
+.logo img{
+    border-radius: 50%;
+}
+.logo p{
+    font-size: large;
+    font-weight: 600;
+}
+.bar{
+    margin:0 auto;
+    width:575px;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+  .bar:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+  }
+  .bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+  }
+  .searchbar{
+    height:45px;
+    border:none;
+    width:500px;
+    font-size:16px;
+    outline: none;
+    
+  }
+  hr{
+    margin-top: 3rem;
+    font-weight: 100;
+  }
+.data{ 
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+    margin-left: 25%; 
+    padding: 2%;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    margin-top: 2%;  
+    font-family: 'Open Sans', sans-serif;
+}
+.day-and-date {
+    margin: 5%;
+    font-size: 18px;
+    font-weight:bold;
+    
+}
+
+.temp{
+    display: flex;
+    font-size: 32px;
+    font-weight:bolder;
+    flex-flow: row-reverse;
+    margin-right: 10%;
+}
+.weather-status{
+    margin: 5%;
+    font-size: 18px;
+    font-weight:bold;
+}
+.data p{
+    font-size: medium;
+    font-weight: bold;
+}
