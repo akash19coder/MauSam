@@ -65,7 +65,7 @@ body{
     background-color: #f2f2f2;
     border-radius: 12px;
     margin-top: 2%;  
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;6
 }
 .day-and-date {
     margin: 5%;
@@ -73,7 +73,9 @@ body{
     font-weight:bold;
     
 }
-
+.day-and-date h5{
+    font-weight: lighter;
+}
 .temp{
     display: flex;
     font-size: 32px;
@@ -89,4 +91,7 @@ body{
 .data p{
     font-size: medium;
     font-weight: bold;
+}
+hr{
+   margin: 3px;
 }
