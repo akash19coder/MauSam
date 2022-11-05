@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/weatherinfo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
     <script src="https://kit.fontawesome.com/7fcad7279a.js" crossorigin="anonymous"></script>
-    <title>Info</title>
+    <title>Weather Report</title>
 </head>
-<body>
+<body onload="showData()">
         <div class="head">
             <div class="logo">
                 
@@ -18,7 +22,8 @@
                 </p>
              </div>
             <div class="bar">
-              <input class="searchbar" type="text" title="Search"> 
+              <input id="cityname" class="searchbar" type="text" onkeydown="showdata(event)" title="Search" placeholder="Enter the City Name">
+             
             </div>
         </div>
 
@@ -26,33 +31,55 @@
 <!-- Weather Info goes here    -->
  <div class="data">
             <div class="day-and-date"> 
-                <p id="date">Thu | Oct 20,2022</p>
-                <h5 id="time">7:00am</h5>
+                <div>
+                <p id="date"></p>
+                <h5 id="time"></h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i> <span id="location"></span>
+                </div>
             </div>
-            <div class="temp">
-                 27&#8451;<i class='fas fa-cloud-sun' style='font-size:36px'></i>
+            <div class="temp" >
+                &#8451; <span id="temp"></span>
+                
             </div>
-            <div class="weather-status">
-                 <p>
-                    Cloudy
+            <div class="weather-status" id="status">
+                 <p id="desc">
+                    
                  </p>
             </div>
            
  </div>
- <div class="data">
-       <p>Wind Quality</p>
-       <hr>
-       <p></i> Wind</p>
-       <hr>
-       <p>Wind Gust</p>
-       <hr>
-       <p>Humidity</p>
-       <hr>
-       <p>Dew Point</p>
-       <hr>
-       <p> Cloud cover</p>
-       <hr>
-       <p>Visibility</p>
+ <div class="grid-container">
+       <div class="grid-item"> 
+          <span class="title"> Pressure: </span>  
+         <span id="pressure"></span>
+       </div>
+       
+       <div class="grid-item">
+           <span class="title">Humidity:</span> 
+        <span id="humidity"></span>
+       </div>
+       
+       <div class="grid-item">
+           <span class="title"> Windspeed:</span>
+         <span id="windspeed"></span>
+        </div>
+       
+       <div class="grid-item">
+           <span class="title">Sunrise:</span>
+         <span id="sunrise"></span>
+        </div>
+       
+       <div class="grid-item">
+           <span class="title">Sunset:</span> 
+        <span id="sunset"></span>
+       </div>
+       
+       <div class="grid-item">
+          <span class="title">Visibility: </span>
+        <span id="visibility"></span>
+       </div>
  </div>
         
 <script src="main.js"></script>
