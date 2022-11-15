@@ -1,0 +1,19 @@
+{
+  "name": "mausam",
+  "version": "1.0.0",
+  "description": "Weather app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash19coder/MauSam.git"
+  },
+  "author": "Akash Sah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akash19coder/MauSam/issues"
+  },
+  "homepage": "https://github.com/akash19coder/MauSam#readme"
+}
